@@ -1,14 +1,14 @@
 cask "pubto" do
-  version "0.4.7"
+  version "0.4.6"
 
   on_intel do
-    url "https://github.com/vertex-ai-llc/pubto-downloads/releases/download/v0.4.7/pubto-desktop-macos-x64.tar.gz"
-    sha256 "8689e0ed911d88a24fc93d3909dd262d7865e1d09464fe8afb788a55b36c806b"
+    url "https://github.com/vertex-ai-llc/pubto-downloads/releases/download/v0.4.6/pubto-desktop-macos-x64.tar.gz"
+    sha256 "8e06868d5aa057d79511ac90f5487ddbc943e7154d1c072fe9d5b7918b4b5257"
   end
 
   on_arm do
-    url "https://github.com/vertex-ai-llc/pubto-downloads/releases/download/v0.4.7/pubto-desktop-macos-arm64.tar.gz"
-    sha256 "e4d755b61c173c4e4504b0d7c8cbaee735c58dea676cadec3594eeb003fffb2f"
+    url "https://github.com/vertex-ai-llc/pubto-downloads/releases/download/v0.4.6/pubto-desktop-macos-arm64.tar.gz"
+    sha256 "94ae4c84f091d4ec6e8e8367a22b1d8e6faf91ec556db287363ca041cc85da6b"
   end
 
   name "Pubto"
@@ -16,5 +16,5 @@ cask "pubto" do
   homepage "https://github.com/vertex-ai-llc/pubto-downloads"
 
   app "Pubto.app"
-  binary "#{appdir}/Pubto.app/Contents/MacOS/pubto-cli", target: "pubto"
+  binary "bin/pubto"
 end
